@@ -53,7 +53,8 @@ module.exports = {
     "object-shorthand": "error",
     "no-undef": "error",
     "no-unused-vars": ["error", { argsIgnorePattern: "^_+" }],
-    "no-use-before-define": "error",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
     "no-warning-comments": [
       "error",
       {
@@ -65,6 +66,14 @@ module.exports = {
     "no-unneeded-ternary": "error",
     "no-nested-ternary": "error",
     "eslint-comments/no-unused-disable": "error",
+    "padding-line-between-statements": [
+      "warn",
+      {
+        blankLine: "always",
+        prev: "*",
+        next: ["return", "if", "for", "export"],
+      },
+    ],
 
     // async
     "no-restricted-syntax": [

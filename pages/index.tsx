@@ -1,6 +1,6 @@
 /* eslint-disable filenames/no-index */
 import Link from "next/link"
-import { Fragment, ReactElement } from "react"
+import React, { Fragment, ReactElement } from "react"
 
 export const IndexPage = (): ReactElement => (
   <Fragment>
