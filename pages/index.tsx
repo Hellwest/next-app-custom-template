@@ -1,14 +1,5 @@
 /* eslint-disable filenames/no-index */
-import Link from "next/link"
-import React, { Fragment, ReactElement } from "react"
+import { IndexPage } from "../src/index/index.page"
 
-export const IndexPage = (): ReactElement => (
-  <Fragment>
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Fragment>
-)
+// eslint-disable-next-line import/no-default-export
+export default IndexPage

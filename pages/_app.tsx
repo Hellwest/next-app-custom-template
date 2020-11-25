@@ -1,10 +1,12 @@
 /* eslint-disable filenames/match-regex */
 import { default as NextApp, AppProps } from "next/app"
-import React, { Component, ReactElement } from "react"
+import React, { ReactElement } from "react"
 
 class App extends NextApp<AppProps> {
   render(): ReactElement {
-    return <Component />
+    const { Component, pageProps } = this.props
+
+    return <Component {...pageProps} />
   }
 }
 
